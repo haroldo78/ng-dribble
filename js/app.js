@@ -3,6 +3,10 @@
 
   app.config(function($routeProvider){
     $routeProvider
+    .when('/shots/:id', {
+      controller: 'ShotsCtrl',
+      templateUrl: 'partials/shots.html'
+    })
     .when('/:list',  {
       controller: 'ShotsListsCtrl',
       templateUrl: 'partials/shots_lists.html'

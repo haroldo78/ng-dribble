@@ -6,3 +6,10 @@ controllers.controller('ShotsListsCtrl', function($scope, $routeParams, $http){
     $scope.list = data.data;
   });
 });
+
+controllers.controller('ShotsCtrl', function($scope, $routeParams, $http){
+  var id = $routeParams.id;
+  $http.jsonp('http://api.dribbble.com/shots/'+ id +'?callback=JSON_CALLBACK').then(function(data){
+    $scope.shot = data.data;
+  });
+});
