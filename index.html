@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
-<body ng-controller="AppCtrl as app">
+<body>
   <div class="container-fluid">
     <nav class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
@@ -24,7 +24,12 @@
         </ul>
       </div>
     </nav>
-    <div ng-controller="ShotsListCtrl as shots">
+    <div ng-controller="ShotsListsCtrl">
+      <ul>
+        <li class="thumbnail" ng-repeat="shot in list.shots">
+          <strong class="title">{{shot.title}}</strong>
+        </li>
+      </ul>
     </div>
   </div>
 
