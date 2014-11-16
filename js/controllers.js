@@ -1,8 +1,11 @@
 var controllers = angular.module('ngDribble.controllers', []);
 
 controllers.controller('AppCtrl', function(){
-  this.name = "Mandy";
-  this.updateName = function(){
-    this.name = "World";
-  };
+});
+
+controllers.controller('ShotsListCtrl', function($http){
+  this.list;
+  $http.jsonp('http://api.dribbble.com/shots/popular?callback=JSON_CALLBACK').then(function(data){
+    console.log(data);
+  })
 })
