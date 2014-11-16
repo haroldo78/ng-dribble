@@ -24,10 +24,18 @@
         </ul>
       </div>
     </nav>
-    <div ng-controller="ShotsListsCtrl">
+    <div class="row" ng-controller="ShotsListsCtrl">
       <ul>
-        <li class="thumbnail" ng-repeat="shot in list.shots">
-          <strong class="title">{{shot.title}}</strong>
+        <li class="col-xs-6 col-sm-3" ng-repeat="shot in list.shots">
+          <div class="thumbnail">
+            <a href="#/shots/{{shot.id}}">
+              <img ng-src="{{shot.image_url}}">
+            </a>
+            <strong>{{shot.title}}</strong><br>
+            <a class="" href="#/players/{{shot.playear.username}}">
+              {{shot.player.name}}
+            </a>
+          </div>
         </li>
       </ul>
     </div>
