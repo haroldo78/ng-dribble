@@ -1,3 +1,13 @@
-<div>
-  Details go here...
-</div>
+<div class="media">
+  <a class="media-left" ng-href="{{shot.player.url}}" target="_blank">
+    <img class="media-object" ng-src="{{shot.player.avatar_url}}" >
+  </a>
+  <div class="media-body">
+    <h3 class="media-heading">{{shot.title}}</h3>
+    <span class="muted">by</span>
+    <a ng-href="{{shot.player.url}}" target="_blank">
+      {{shot.player.name}}
+    </a>|
+    {{shot.created_at | dribbleDate:'MMM d, yyyy'}}
+  </div>
+</div

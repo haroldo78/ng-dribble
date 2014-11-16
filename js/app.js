@@ -1,5 +1,8 @@
 (function(){
-  var app = angular.module('ngDribble', ['ngRoute','ngDribble.controllers']);
+  var app = angular.module('ngDribble', [
+      'ngRoute',
+      'ngDribble.controllers',
+      'ngDribble.filters']);
 
   app.config(function($routeProvider){
     $routeProvider

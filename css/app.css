@@ -17,3 +17,8 @@ ul {
 .stats .stat {
   padding: 1%;
 }
+
+.media-left img {
+  height: 64px;
+  width: 64px;
+}
