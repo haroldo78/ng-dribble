@@ -18,10 +18,6 @@ ul {
   padding: 1% 0;
 }
 
-.stats .stat {
-  padding: 1%;
-}
-
 .media-left img {
   height: 64px;
   width: 64px;
@@ -34,4 +30,11 @@ ul {
 
 .info {
   padding: 1% 0;
+}
+
+.truncate {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
