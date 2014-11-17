@@ -14,7 +14,7 @@
 <div class="row">
   <div class="col-sm-6">
     <img class="shot_image" ng-src="{{shot.image_url}}">
-    <h2>Responses</h2>
+    <!-- <h2>Responses</h2> -->
   </div>
   <div class="col-sm-6 info">
     <ul>
@@ -36,7 +36,7 @@
       </li>
       <li>
         <i class="icon-globe"></i>
-        <a href="{{shot.short_url}}">
+        <a ng-href="{{shot.short_url}}" target="_blank">
           {{shot.short_url}}
         </a>
       </li>
