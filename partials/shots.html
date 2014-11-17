@@ -3,11 +3,43 @@
     <img class="media-object" ng-src="{{shot.player.avatar_url}}" >
   </a>
   <div class="media-body">
-    <h3 class="media-heading">{{shot.title}}</h3>
+    <h1 class="media-heading">{{shot.title}}</h1>
     <span class="muted">by</span>
     <a ng-href="{{shot.player.url}}" target="_blank">
       {{shot.player.name}}
     </a>|
     {{shot.created_at | dribbleDate:'MMM d, yyyy'}}
   </div>
-</div
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <img class="shot_image" ng-src="{{shot.image_url}}">
+    <h2>Responses</h2>
+  </div>
+  <div class="col-sm-6 info">
+    <ul>
+      <li>
+        <i class="icon-heart"></i>
+        {{shot.likes_count}} Likes
+      </li>
+      <li>
+        <i class="icon-eye-open"></i>
+        {{shot.views_count}} Views
+      </li>
+      <li>
+        <i class="icon-share-alt"></i>
+        {{shot.rebounds_count}} Rebounds
+      </li>
+      <li>
+        <i class="icon-comment"></i>
+        {{shot.comments_count}} Comments
+      </li>
+      <li>
+        <i class="icon-globe"></i>
+        <a href="{{shot.short_url}}">
+          {{shot.short_url}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

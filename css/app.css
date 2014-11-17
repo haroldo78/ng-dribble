@@ -2,6 +2,10 @@
   margin: 2%;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -21,4 +25,13 @@ ul {
 .media-left img {
   height: 64px;
   width: 64px;
+}
+
+.shot_image {
+  padding: 3% 0;
+  width: 100%;
+}
+
+.info {
+  padding: 1% 0;
 }
